@@ -16,17 +16,21 @@ export default class MongoDB {
 
     async initialize() {
 
-        const db_hostname = useRuntimeConfig().mongodbHostName
+        // const db_hostname = useRuntimeConfig().mongodbHostName
         // const db_hostname = 'localhost'
-        const db_port = useRuntimeConfig().mongodbPort
+        // const db_port = useRuntimeConfig().mongodbPort
         // const db_port = 27017
-        const db_name = useRuntimeConfig().mongodbDbName
+        // const db_name = useRuntimeConfig().mongodbDbName
         // const db_name = 'embeddingvectorsdb'
+        const db_uri = 'mongodb+srv://xandrawatkins:j3kTpNYWzMQyb4zE@avatarai.egbcjrd.mongodb.net/?retryWrites=true&w=majority&appName=AvatarAI'
+
+        // console.log(db_uri)
         
         
         try {
 
-            await mongoose.connect(`mongodb://${db_hostname}:${db_port}/${db_name}`)
+            // await mongoose.connect(`mongodb://${db_hostname}:${db_port}/${db_name}`)
+            await mongoose.connect(db_uri)
     
             const messagesSchema = new mongoose.Schema({
                 uid: String,

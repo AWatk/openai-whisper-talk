@@ -185,7 +185,7 @@ export default defineEventHandler(async (event) => {
 
     const today = new Date()
 
-    let system_prompt = 'You are a competent and helpful standardized patient playing the role of a patient in a medical simulation that takes place in an outpatient clinic. The conversation starts as the clinician walks into the room and begins their assessment.'+
+    let system_prompt = 'You are a competent and helpful standardized patient playing the role of a patient in a medical simulation that takes place in an outpatient clinic with the user playing the role of the clinician.'+
 
     `# Role\n` +
     `You will act as ${selPerson.name}.\n` +
