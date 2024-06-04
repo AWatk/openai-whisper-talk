@@ -77,7 +77,7 @@ watch(parms, (newvalue) => {
 
             if(friend) {
 
-                title.value = 'friend prompt'
+                title.value = 'SP Description'
                 id.value = friend.id
                 name.value = friend.name
                 prompt.value = friend.prompt
@@ -107,7 +107,7 @@ const noSaveFlag = computed(() => name.value.trim().length === 0 || prompt.value
                         <input :disabled="isLoading" class="input-text" type="text" v-model="name" />
                     </div>
                     <div class="input-item">
-                        <label class="label">Persona</label>
+                        <label class="label">Role</label>
                         <textarea :disabled="isLoading" class="input-textarea" v-model="prompt" />
                     </div>
                 </div>

@@ -263,6 +263,8 @@ export default defineEventHandler(async (event) => {
     //     `# Today\n` +
     //     `Today is ${today}.\n`
 
+    console.log(selPerson.name + "!!!!")
+
     let system_prompt = `In this session, we will simulate a voice conversation between two friends.\n\n` +
         
         `# Persona\n` +
