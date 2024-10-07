@@ -19,4 +19,5 @@ public/upload/*.webm
 *.bu.ts
 *.bu.md
 *.pem
-.DS_Store
+.DS_Storevenv/
+__pycache__/
